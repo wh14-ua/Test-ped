@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Test EDA — Ing. Informática UA</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>Test PED — Ing. Informática UA</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #0f1117;
@@ -22,12 +22,16 @@
   --gold: #fbbf24;
   --radius: 12px;
   --shadow: 0 4px 24px rgba(0,0,0,.3);
+  /* ── FUENTES (cámbialas aquí y se aplican a toda la app) ── */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -58,7 +62,7 @@ header {
   padding: 48px 24px 24px;
 }
 header h1 {
-  font-family:'DM Serif Display',serif;
+  font-family:var(--font-display);
   font-size: clamp(2rem,5vw,3.2rem);
   background: linear-gradient(135deg, var(--accent), #a78bfa, var(--gold));
   -webkit-background-clip:text;
@@ -133,7 +137,7 @@ header p {
   margin-top:24px;
 }
 .config-panel h2 {
-  font-family:'DM Serif Display',serif;
+  font-family:var(--font-display);
   font-size:1.5rem;
   margin-bottom:20px;
 }
@@ -227,7 +231,7 @@ header p {
   transition: width .4s ease;
 }
 .progress-text {
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   font-size:.82rem;
   color:var(--text2);
 }
@@ -244,7 +248,7 @@ header p {
 .question-card.answered-wrong { border-color: var(--wrong); }
 
 .question-number {
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   font-size:.78rem;
   color:var(--accent);
   margin-bottom:10px;
@@ -375,7 +379,7 @@ header p {
   width:100%; aspect-ratio:1;
   border-radius:6px;
   border:none;
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   font-size:.65rem;
   cursor:pointer;
   background:var(--bg4);
@@ -428,7 +432,7 @@ header p {
   transition: stroke-dashoffset 1.5s ease;
 }
 .score-number {
-  font-family:'DM Serif Display',serif;
+  font-family:var(--font-display);
   font-size:2.8rem;
   z-index:1;
   line-height:1;
@@ -436,7 +440,7 @@ header p {
 .score-label { font-size:.85rem; color:var(--text2); z-index:1; }
 
 .results-card h2 {
-  font-family:'DM Serif Display',serif;
+  font-family:var(--font-display);
   font-size:1.8rem;
   margin-bottom:8px;
 }
@@ -451,7 +455,7 @@ header p {
   text-align:center;
 }
 .stat .val {
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   font-size:1.4rem;
   font-weight:700;
 }
@@ -478,7 +482,7 @@ header p {
   margin-bottom:6px;
 }
 .review-item .rev-qnum {
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   font-size:.78rem;
   color:var(--accent);
 }
@@ -578,7 +582,7 @@ header p {
   color:var(--text);
   padding:8px 10px;
   border-radius:8px;
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   font-size:.9rem;
   outline:none;
   width:70px;
@@ -587,7 +591,7 @@ header p {
 }
 .range-input:focus { border-color:var(--accent); }
 .range-count {
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   font-size:.82rem;
   color:var(--accent);
   margin-left:8px;
@@ -600,7 +604,7 @@ header p {
   margin-top:10px;
   font-size:.78rem;
   color:var(--text2);
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   line-height:1.6;
   max-height:60px;
   overflow-y:auto;
@@ -608,7 +612,7 @@ header p {
 
 /* ── Timer ── */
 .timer-display {
-  font-family:'JetBrains Mono',monospace;
+  font-family:var(--font-mono);
   font-size:.9rem;
   color:var(--gold);
   padding:6px 14px;
@@ -624,6 +628,23 @@ header p {
   .q-map-panel { width:calc(100vw - 40px); right:10px; bottom:70px; }
   .quiz-header { flex-direction:column; align-items:flex-start; }
 }
+
+/* ── BANNER: REPASAR MIS ERRORES ── */
+.errores-banner{
+  display:flex; align-items:center; justify-content:space-between; gap:20px;
+  background:linear-gradient(135deg, var(--bg2), var(--bg3));
+  border:1px solid var(--bg4); border-left:4px solid var(--wrong);
+  border-radius:var(--radius); padding:20px 24px; margin-top:28px;
+  box-shadow:var(--shadow);
+}
+.errores-banner h3{ font-family:var(--font-display); font-size:1.25rem; margin-bottom:4px; }
+.errores-banner p{ color:var(--text2); font-size:.9rem; max-width:46ch; }
+.errores-banner #errores-count{ color:var(--wrong); font-weight:700; }
+.errores-banner .btn{ white-space:nowrap; }
+@media (max-width:600px){
+  .errores-banner{ flex-direction:column; align-items:stretch; text-align:left; }
+  .errores-banner .btn{ width:100%; }
+}
 </style>
 </head>
 <body>
@@ -631,7 +652,7 @@ header p {
 <!-- ═══════════ SCREEN: HOME ═══════════ -->
 <div id="screen-home" class="screen active">
   <header>
-    <h1>Test EDA</h1>
+    <h1>Test PED</h1>
     <p>Estructuras de Datos y Algoritmos — Ing. Informática UA</p>
   </header>
   <div class="container">
@@ -641,6 +662,14 @@ header p {
     </div>
     <div id="home-content" style="display:none">
       <div class="theme-grid" id="theme-grid"></div>
+
+      <div class="errores-banner">
+        <div class="errores-banner-text">
+          <h3>🎯 Repasar mis errores</h3>
+          <p>Todas las preguntas que has fallado en tus tests (<span id="errores-count">0</span>), juntas y barajadas. Modo práctica: corrige al instante con explicación.</p>
+        </div>
+        <button class="btn btn-primary" id="btn-errores" onclick="startErroresQuiz()">▶ Repasar errores</button>
+      </div>
 
       <div class="config-panel" style="margin-top:32px">
         <h2>⚙ Configurar Test</h2>
@@ -806,6 +835,64 @@ const THEMES = {
 const qThemeMap = {};
 for (const [theme, data] of Object.entries(THEMES)) {
   for (const qn of data.questions) qThemeMap[qn] = theme;
+}
+
+// ═══════════════════════════════════════════
+//  MIS ERRORES (repaso)
+//  Lista embebida de respaldo: todas las preguntas falladas en los
+//  11 tests (T1..T8, C++, Hash, Montículos). Si existe un archivo
+//  errores.txt junto al HTML, ESE manda (así puedes editarlo a mano).
+// ═══════════════════════════════════════════
+const DEFAULT_ERRORES = [
+  // Tema 1. Tipos Lineales (22)
+  14,22,34,35,37,52,55,61,89,147,150,284,290,293,295,298,306,322,324,344,388,455,
+  // Tema 2. Complejidad (3)
+  21,327,338,
+  // Tema 3.1 Árboles Binarios y ABB (28)
+  13,25,27,30,40,81,98,99,130,131,132,140,141,143,187,188,195,196,197,206,207,210,343,389,428,445,457,458,
+  // Tema 3.2 AVL (7)
+  93,94,100,152,163,341,429,
+  // Tema 3.3 Árboles 2-3 (6)
+  166,168,172,331,393,430,
+  // Tema 3.4 Árboles 2-3-4 (5)
+  134,182,317,332,419,
+  // Tema 4. Conjuntos (4)
+  240,242,247,333,
+  // Tema 5. Grafos (12)
+  272,273,276,278,309,311,336,337,347,366,384,403,
+  // C++ (5)
+  86,124,220,325,407,
+  // Dispersión / Hash (5)
+  255,258,264,348,349,
+  // Montículos y Colas de Prioridad (6)
+  253,256,261,345,401,452
+];
+let misErrores = []; // se rellena en init() (desde errores.txt o el respaldo)
+
+function parseErrores(raw){
+  const set = new Set();
+  raw.split('\n').forEach(line => {
+    const code = line.split('#')[0].trim();      // ignora comentarios con #
+    if (!code) return;
+    code.split(/[\s,;]+/).forEach(tok => {
+      const n = parseInt(tok, 10);
+      if (!isNaN(n)) set.add(n);
+    });
+  });
+  return [...set];
+}
+
+function updateErroresButton(){
+  const avail = misErrores.filter(n => allQuestions[n]);
+  const cnt = document.getElementById('errores-count');
+  const btn = document.getElementById('btn-errores');
+  if (cnt) cnt.textContent = avail.length;
+  if (btn){
+    const empty = avail.length === 0;
+    btn.disabled = empty;
+    btn.style.opacity = empty ? .5 : 1;
+    btn.style.cursor = empty ? 'not-allowed' : 'pointer';
+  }
 }
 
 // ═══════════════════════════════════════════
@@ -1299,7 +1386,7 @@ function finishQuiz() {
 
   // Review list
   const rl = document.getElementById('review-list');
-  rl.innerHTML = '<h3 style="margin-bottom:16px;font-family:DM Serif Display,serif">Revisión de respuestas</h3>';
+  rl.innerHTML = '<h3 style="margin-bottom:16px;font-family:var(--font-display)">Revisión de respuestas</h3>';
 
   quizQuestions.forEach((q, i) => {
     const ans = answers[i];
@@ -1344,6 +1431,34 @@ function retryWrong() {
   renderQuestion();
   // No timer for retry
   document.getElementById('timer-box').style.display = 'none';
+}
+
+// ═══════════════════════════════════════════
+//  REPASAR MIS ERRORES
+// ═══════════════════════════════════════════
+function startErroresQuiz(){
+  const pool = misErrores
+    .filter(n => allQuestions[n])
+    .map(n => allQuestions[n]);
+  if (!pool.length){
+    alert('No hay errores disponibles. Revisa que errores.txt (o la lista interna) tenga números que existan en preguntas_test.txt.');
+    return;
+  }
+  pool.sort(() => Math.random() - 0.5);
+
+  quizQuestions = pool;
+  currentIdx = 0;
+  answers = {};
+  quizMode = 'practice';          // siempre práctica: corrige al instante
+  timePerQ = 0;                   // sin temporizador
+  totalElapsed = 0;
+  quizStartTime = new Date();
+  quizSelectedThemes = ['Mis errores (repaso)'];
+
+  buildMap();
+  showScreen('quiz');
+  renderQuestion();
+  startTimer();                   // con timePerQ=0 oculta el temporizador
 }
 
 // ═══════════════════════════════════════════
@@ -1402,7 +1517,7 @@ function generateLog(reason) {
   let log = '';
 
   log += sep + '\n';
-  log += '  TEST EDA — REGISTRO DE RESULTADOS\n';
+  log += '  TEST PED — REGISTRO DE RESULTADOS\n';
   log += sep + '\n\n';
 
   log += `Fecha:        ${now.toLocaleDateString('es-ES', {weekday:'long', year:'numeric', month:'long', day:'numeric'})}\n`;
@@ -1489,7 +1604,7 @@ function downloadLog(reason) {
   const now = new Date();
   const dateStr = now.toISOString().slice(0,10);
   const timeStr = now.toTimeString().slice(0,5).replace(':','-');
-  const filename = `test_eda_${dateStr}_${timeStr}.txt`;
+  const filename = `test_ped_${dateStr}_${timeStr}.txt`;
 
   const blob = new Blob([log], { type: 'text/plain;charset=utf-8' });
   const url = URL.createObjectURL(blob);
@@ -1519,9 +1634,23 @@ async function init() {
     const text = await resp.text();
     parseQuestions(text);
 
+    // Cargar la lista de errores: errores.txt si existe; si no, la embebida.
+    try {
+      const er = await fetch('errores.txt');
+      if (er.ok) {
+        const parsed = parseErrores(await er.text());
+        misErrores = parsed.length ? parsed : DEFAULT_ERRORES.slice();
+      } else {
+        misErrores = DEFAULT_ERRORES.slice();
+      }
+    } catch(_) {
+      misErrores = DEFAULT_ERRORES.slice();
+    }
+
     document.getElementById('loading-home').style.display = 'none';
     document.getElementById('home-content').style.display = 'block';
     buildHome();
+    updateErroresButton();
   } catch(e) {
     document.getElementById('loading-home').innerHTML = `
       <p style="color:var(--wrong)">❌ Error: ${e.message}</p>

@@ -1,0 +1,141 @@
+# ════════════════════════════════════════════════════════
+#  MIS ERRORES — PED  ·  repaso dirigido
+# ════════════════════════════════════════════════════════
+#
+#  Cómo funciona:
+#   · La app lee este archivo y arma el repaso de TODAS las
+#     preguntas listadas aquí (botón "Repasar mis errores").
+#   · Solo cuenta el número que abre cada línea. Todo lo que
+#     vaya tras '#' es comentario y se ignora.
+#   · ¿Ya te sabes una? Borra su línea (o ponle # delante).
+#   · ¿Fallaste algo nuevo? Añade su número en su tema.
+#
+#  Total actual: 103 errores  ·  formato: <nº>  # tema — dijiste X, era Y
+# ════════════════════════════════════════════════════════
+
+# ── Tema 1. Tipos Lineales  (22) ──
+14  # dijiste Falso, era Verdadero
+22  # dijiste Verdadero, era Falso
+34  # dijiste Falso, era Verdadero
+35  # dijiste Verdadero, era Falso
+37  # dijiste Verdadero, era Falso
+52  # dijiste Falso, era Verdadero
+55  # dijiste Falso, era Verdadero
+61  # dijiste Verdadero, era Falso
+89  # dijiste Verdadero, era Falso
+147 # dijiste Falso, era Verdadero
+150 # dijiste Verdadero, era Falso
+150 # dijiste Verdadero, era Falso
+150 # dijiste Verdadero, era Falso
+284 # dijiste Falso, era Verdadero
+290 # dijiste Verdadero, era Falso
+293 # dijiste Falso, era Verdadero
+295 # dijiste Verdadero, era Falso
+298 # dijiste Verdadero, era Falso
+306 # dijiste Falso, era Verdadero
+322 # dijiste Verdadero, era Falso
+324 # dijiste Verdadero, era Falso
+344 # dijiste Falso, era Verdadero
+388 # dijiste Falso, era Verdadero
+455 # dijiste Falso, era Verdadero
+
+# ── Tema 2. Complejidad  (3) ──
+338 # dijiste Falso, era Verdadero
+327 # dijiste Verdadero, era Falso
+21  # dijiste Verdadero, era Falso
+
+# ── Tema 3.1 Árboles Binarios y ABB  (28) ──
+13  # dijiste Verdadero, era Falso
+25  # dijiste Verdadero, era Falso
+27  # dijiste Falso, era Verdadero
+30  # dijiste Verdadero, era Falso
+40  # dijiste Verdadero, era Falso
+81  # dijiste Falso, era Verdadero
+98  # dijiste Verdadero, era Falso
+99  # dijiste Falso, era Verdadero
+130 # dijiste Verdadero, era Falso
+131 # dijiste Falso, era Verdadero
+132 # dijiste Falso, era Verdadero
+140 # dijiste Verdadero, era Falso
+141 # dijiste Falso, era Verdadero
+143 # dijiste Falso, era Verdadero
+187 # dijiste Verdadero, era Falso
+188 # dijiste Verdadero, era Falso
+195 # dijiste Falso, era Verdadero
+196 # dijiste Falso, era Verdadero
+197 # dijiste Verdadero, era Falso
+206 # dijiste Falso, era Verdadero
+207 # dijiste Verdadero, era Falso
+210 # dijiste Falso, era Verdadero
+343 # dijiste Verdadero, era Falso
+389 # dijiste Falso, era Verdadero
+428 # dijiste Falso, era Verdadero
+445 # dijiste Falso, era Verdadero
+457 # dijiste Verdadero, era Falso
+458 # dijiste Falso, era Verdadero
+
+# ── Tema 3.2 Árboles AVL  (7) ──
+93  # dijiste Verdadero, era Falso
+94  # dijiste Falso, era Verdadero
+100 # dijiste Falso, era Verdadero
+152 # dijiste Verdadero, era Falso
+163 # dijiste Falso, era Verdadero
+341 # dijiste Verdadero, era Falso
+429 # dijiste Falso, era Verdadero
+
+# ── Tema 3.3 Árboles 2-3  (6) ──
+166 # dijiste Falso, era Verdadero
+168 # dijiste Falso, era Verdadero
+172 # dijiste Falso, era Verdadero
+331 # dijiste Falso, era Verdadero
+393 # dijiste Falso, era Verdadero
+430 # dijiste Verdadero, era Falso
+
+# ── Tema 3.4 Árboles 2-3-4  (5) ──
+134 # dijiste Verdadero, era Falso
+182 # dijiste Verdadero, era Falso
+317 # dijiste Falso, era Verdadero
+332 # dijiste Verdadero, era Falso
+419 # dijiste Verdadero, era Falso
+
+# ── Tema 4. Conjuntos  (4) ──
+240 # dijiste Falso, era Verdadero
+242 # dijiste Verdadero, era Falso
+247 # dijiste Falso, era Verdadero
+333 # dijiste Verdadero, era Falso
+
+# ── Tema 5. Grafos  (12) ──
+272 # dijiste Verdadero, era Falso
+273 # dijiste Verdadero, era Falso
+276 # dijiste Falso, era Verdadero
+278 # dijiste Falso, era Verdadero
+309 # dijiste Falso, era Verdadero
+311 # dijiste Falso, era Verdadero
+336 # dijiste Falso, era Verdadero
+337 # dijiste Falso, era Verdadero
+347 # dijiste Falso, era Verdadero
+366 # dijiste Falso, era Verdadero
+384 # dijiste Falso, era Verdadero
+403 # dijiste Verdadero, era Falso
+
+# ── C++  (5) ──
+86  # dijiste Verdadero, era Falso
+124 # dijiste Verdadero, era Falso
+220 # dijiste Verdadero, era Falso
+325 # dijiste Verdadero, era Falso
+407 # dijiste Verdadero, era Falso
+
+# ── Dispersión / Hash  (5) ──
+255 # dijiste Verdadero, era Falso
+258 # dijiste Falso, era Verdadero
+264 # dijiste Falso, era Verdadero
+348 # dijiste Falso, era Verdadero
+349 # dijiste Verdadero, era Falso
+
+# ── Montículos y Colas de Prioridad  (6) ──
+253 # dijiste Verdadero, era Falso
+256 # dijiste Falso, era Verdadero
+261 # dijiste Falso, era Verdadero
+345 # dijiste Verdadero, era Falso
+401 # dijiste Verdadero, era Falso
+452 # dijiste Falso, era Verdadero
